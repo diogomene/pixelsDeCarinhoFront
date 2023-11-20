@@ -12,14 +12,29 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
+}
+
+html {
+  width: 100vw;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  display: flex;
 }

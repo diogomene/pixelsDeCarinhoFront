@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import getAcoes from '../services/AcoesService';
 import { AxiosResponse } from 'axios';
+import "./Home.css"
 
 function Home() {
     const [acoes, setAcoes] = useState<Acao[]>([]);
@@ -25,7 +26,7 @@ function Home() {
     }, []);
 
     return (
-        <div>
+        <div className='homePage-container'>
             <h1>Lista de Ações</h1>
             {error && <p>{error}</p>}
             <ul>
