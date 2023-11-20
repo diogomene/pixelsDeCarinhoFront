@@ -1,18 +1,40 @@
-import './Navigator.css';
+import "./Navigator.css";
+import Logo from "../assets/pixels-logo.png";
 
 function Navigator() {
     return (
         <div>
-            <div className="navbar">
+            <nav className="navbar">
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <img
+                            className="imagem-logo"
+                            src={Logo}
+                            alt="Logo"
+                        ></img>
                     </li>
-                    <li>
-                        <a href="/aboutus">Sobre nós</a>
-                    </li>
+                    <div>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about-us">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="/transparency">Transparência</a>
+                        </li>
+                        <li>
+                            <a href="/photos">Galeria de fotos</a>
+                        </li>
+                        <li>
+                            <a href="/promotional-material">Material de divulgação</a>
+                        </li>
+                        <li>
+                            <a href="/become-contributor">Torne-se um colaborador</a>
+                        </li>
+                    </div>
                 </ul>
-            </div>
+            </nav>
         </div>
     );
 }

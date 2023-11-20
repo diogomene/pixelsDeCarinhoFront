@@ -1,7 +1,13 @@
-.homePage-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.imagem-natal {
+    width: 40rem;
+    height: auto;
+    border-radius: 15px;
+}
 
+.folder-acao {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
