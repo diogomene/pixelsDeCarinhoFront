@@ -1,3 +1,3 @@
-const uri = "http://192.168.100.66:3000";
+const uri = "https://pixels-back.vercel.app";
 
 export default uri;
