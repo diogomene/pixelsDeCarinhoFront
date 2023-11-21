@@ -23,15 +23,15 @@ function Navigator() {
                         <li>
                             <a href="/transparency">Transparência</a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="/photos">Galeria de fotos</a>
                         </li>
                         <li>
                             <a href="/promotional-material">Material de divulgação</a>
-                        </li>
+                        </li>*/}
                         <li>
-                            <a href="/become-contributor">Torne-se um colaborador</a>
-                        </li>
+                            <a href="/contact">Contato</a>
+                        </li> 
                     </div>
                 </ul>
             </nav>

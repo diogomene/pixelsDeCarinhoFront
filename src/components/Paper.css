@@ -4,3 +4,17 @@
     background-color: #ffffff;
     width: 70rem;
 }
+
+@media screen and (max-width: 1320px) {
+    .paper-container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: auto;
+        height: auto;
+    }
+
+    .paper-container>img {
+        width: 2rem;
+    }
+}

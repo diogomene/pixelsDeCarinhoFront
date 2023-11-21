@@ -11,3 +11,29 @@
     justify-content: center;
     padding-bottom: 2rem;
 }
+
+#em-dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem-pix {
+    width: 10rem;
+    height: auto;
+}
+
+@media screen and (max-width: 1320px) {
+    .imagem-natal {
+        width: 60%;
+    }
+}

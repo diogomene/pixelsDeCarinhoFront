@@ -5,6 +5,7 @@ import "./Home.css";
 import PageContainer from "../components/PageContainer";
 import Paper from "../components/Paper";
 import Natal from "../assets/natal.jpeg";
+import Pix from "../assets/pix.jpeg";
 
 function Home() {
     const [acoes, setAcoes] = useState<Acao[]>([]);
@@ -34,16 +35,16 @@ function Home() {
         <PageContainer>
             <Paper>
                 <div className="homePage-container">
-                    
-                    
                     {error && <p>{error}</p>}
                     {acoes.map((a) => (
-                        
-
                         <div key={a._id}>
                             <div className="folder-acao">
-                                <img className="imagem-natal" src={Natal} alt="Natal" />
-                            </div> 
+                                <img
+                                    className="imagem-natal"
+                                    src={Natal}
+                                    alt="Natal"
+                                />
+                            </div>
 
                             <h1>{a.nome}</h1>
                             <p>
@@ -70,6 +71,47 @@ function Home() {
                             </p>
                         </div>
                     ))}
+                    <br />
+                    <div className="help">
+                        <h2>Como ajudar nesta missão?</h2>
+                        <br />
+                        <p>
+                            <strong>Doe Itens Especiais: </strong>
+                            Contribua com brinquedos, roupas ou material
+                            escolar.
+                        </p>
+                        <br />
+                        <p>
+                            <strong>Organize um Ponto de Coleta: </strong>
+                            Torne-se um ponto de coleta em sua comunidade para
+                            receber doações.
+                        </p>
+                        <br />
+                        <p>
+                            <strong>Doação Financeira: </strong>
+                            Contribua com uma doação financeira para apoiar
+                            nossas iniciativas.
+                        </p>
+                        <br />
+                        <div className="donate">
+                            <h3>Doações Financeiras através do Pix</h3>
+                            <br />
+                            <h4>Escaneie o QR Code abaixo:</h4>
+                            <br />
+                            <div className="folder-pix">
+                                <img
+                                    className="imagem-pix"
+                                    src={Pix}
+                                    alt="Pix"
+                                />
+                            </div>
+                            <br />
+                            <p>
+                                Ou digite a chave PIX:{" "}
+                                <strong>pixelsdecarinho@gmail.com</strong>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </Paper>
         </PageContainer>
