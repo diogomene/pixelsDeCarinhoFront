@@ -1,6 +1,5 @@
 import getEntradas from "../services/EntradasService";
 import getSaidas from "../services/SaidasService";
-import formatDate from "../formatDate"; // Certifique-se de usar o caminho correto
 import PageContainer from "../components/PageContainer";
 import Paper from "../components/Paper";
 import { useEffect, useState } from "react";
@@ -74,7 +73,7 @@ function Transparency() {
                                                 currency: "BRL",
                                             })}
                                         </td>
-                                        <td>{formatDate(a.dataHora)}</td>
+                                        <td>{a.dataHora}</td>
                                     </tr>
                                 ))}
                                 <tr>
