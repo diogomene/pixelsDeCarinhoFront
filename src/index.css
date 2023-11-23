@@ -22,8 +22,12 @@ a {
   text-decoration: none;
 }
 
-html {
+
+html,
+body {
   width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -32,10 +36,12 @@ body {
   width: 100%;
   min-width: 320px;
   min-height: 100vh;
+  max-height: 100vh;
   background-color: #EDEDED;
 }
 
 #root {
   width: 100%;
+  max-height: 100vh;
   display: flex;
 }
