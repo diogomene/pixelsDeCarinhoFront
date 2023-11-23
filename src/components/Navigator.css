@@ -5,6 +5,9 @@ body {
 }
 
 .navbar {
+    z-index: 1;
+    position: sticky;
+    top: 0;
     background-color: #F9B902;
     overflow: hidden;
     display: flex;;

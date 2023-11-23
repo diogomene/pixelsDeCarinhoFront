@@ -52,35 +52,35 @@ function Transparency() {
         <PageContainer>
             <Paper>
                 <div>
-                    <h1>Entradas</h1>
+                    <h1 className="entradas-title">Entradas</h1>
                     {error && <p>{error}</p>}
                     <div className="page-transparency">
                         <table className="table-entradas">
                             <thead>
                                 <tr>
                                     <th>Nome do Doador</th>
-                                    <th>Valor</th>
-                                    <th>Data e Hora</th>
+                                    <th className="text-center data-hora">Data e Hora</th>
+                                    <th className="text-right">Valor</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {Entradas.map((a) => (
                                     <tr key={a._id}>
                                         <td>{a.nomeDoador}</td>
-                                        <td>
+                                        <td className="text-center data-hora">{a.dataHora}</td>
+                                        <td className="text-right">
                                             {a.valor.toLocaleString("pt-BR", {
                                                 style: "currency",
                                                 currency: "BRL",
                                             })}
                                         </td>
-                                        <td>{a.dataHora}</td>
                                     </tr>
                                 ))}
-                                <tr>
-                                    <td colSpan={1}>
-                                        <strong>Valor Total</strong>
+                                <tr className="tr-total">
+                                    <td className="font-bold no-border-right" colSpan={1}>
+                                        Valor Total
                                     </td>
-                                    <td colSpan={2}>
+                                    <td className="text-right font-bold no-border-left" colSpan={2}>
                                         {Entradas.reduce(
                                             (total, entrada) =>
                                                 total + entrada.valor,
@@ -95,9 +95,9 @@ function Transparency() {
                         </table>
                     </div>
                 </div>
+                <hr className="separator" />
                 <div>
-                    <br />
-                    <h1>Saídas</h1>
+                    <h1 className="saidas-title">Saídas</h1>
                     {error && <p>{error}</p>}
                     <div className="page-transparency">
                         <table className="table-entradas">
@@ -105,8 +105,8 @@ function Transparency() {
                                 <tr>
                                     <th>Destino</th>
                                     <th>Descrição</th>
-                                    <th>Valor</th>
-                                    <th>Data e Hora</th>
+                                    <th className="text-center data-hora">Data e Hora</th>
+                                    <th className="text-right">Valor</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -114,7 +114,8 @@ function Transparency() {
                                     <tr key={saida._id}>
                                         <td>{saida.destino}</td>
                                         <td>{saida.descricao}</td>
-                                        <td>
+                                        <td className="text-center data-hora">{saida.dataHora}</td>
+                                        <td className="text-right">
                                             {saida.valor.toLocaleString(
                                                 "pt-BR",
                                                 {
@@ -123,14 +124,13 @@ function Transparency() {
                                                 }
                                             )}
                                         </td>
-                                        <td>{saida.dataHora}</td>
                                     </tr>
                                 ))}
-                                <tr>
-                                    <td colSpan={2}>
-                                        <strong>Valor Total</strong>
+                                <tr className="tr-total">
+                                    <td className="font-bold no-border-right" colSpan={2}>
+                                        Valor Total
                                     </td>
-                                    <td colSpan={2}>
+                                    <td className="text-right font-bold no-border-left" colSpan={2}>
                                         {Saidas.reduce(
                                             (total, saida) =>
                                                 total + saida.valor,
