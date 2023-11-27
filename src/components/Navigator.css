@@ -1,4 +1,3 @@
-/* Navigator.css */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -38,11 +37,12 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: scale .1s ease-in;
 }
 
 li a:hover {
-    background-color: #000;
     color: white;
+    scale: 1.1;
 }
 
 .imagem-logo {
