@@ -29,6 +29,9 @@ function Navigator() {
                         <a href="/promotional-material">Material de divulgação</a>
                     </li>*/}
                     <li>
+                        <a href="/gallery">Fotos</a>
+                    </li>
+                    <li>
                         <a href="/contact">Contato</a>
                     </li>
                 </div>
