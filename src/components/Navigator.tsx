@@ -28,12 +28,14 @@ function Navigator() {
     }
     return (
         <nav className="navbar">
-            <img
-                className="imagem-logo"
-                src={Logo}
-                alt="Logo"
-            ></img>
-            <ul ref={menuRef} className="unactive">
+            <a className="logo-container" href="">
+                <img
+                    className="imagem-logo"
+                    src={Logo}
+                    alt="Logo"
+                ></img>
+            </a>
+            <ul ref={menuRef}>
 
                     <li>
                         <a href="/">Home</a>

@@ -1,5 +1,4 @@
 :root {
-  font-family: Halvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,13 +15,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
 }
-
-
 html,
 body {
   width: 100vw;
