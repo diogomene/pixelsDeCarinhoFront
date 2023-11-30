@@ -5,7 +5,13 @@
     width: 70rem;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1150px){
+    .paper-container {
+        width: 50rem;
+    }
+
+}
+@media screen and (max-width: 1020px) {
     .paper-container {
         display: flex;
         flex-direction: column;

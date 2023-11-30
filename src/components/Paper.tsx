@@ -1,10 +1,19 @@
 import { ReactElement } from "react";
-import "./Paper.css";''
+import "./Paper.css";
+("");
 
 interface PaperProps {
-    children: ReactElement|ReactElement[];
+    backgroundColor?: string;
+    children: ReactElement | ReactElement[];
 }
 
-export default function Paper({ children }: PaperProps) {
-    return <div className="paper-container">{children}</div>;
+export default function Paper({ children, backgroundColor }: PaperProps) {
+    return (
+        <div
+            className="paper-container"
+            style={backgroundColor?{backgroundColor:backgroundColor}:{}}
+        >
+            {children}
+        </div>
+    );
 }
