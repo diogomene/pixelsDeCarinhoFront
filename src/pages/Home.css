@@ -31,8 +31,11 @@
     width: 10rem;
     height: auto;
 }
+.homePage-container p{
+    margin-bottom: 1rem;
+}
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1020px) {
     .imagem-natal {
         width: 60%;
     }

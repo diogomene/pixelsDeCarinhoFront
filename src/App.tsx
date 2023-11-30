@@ -6,7 +6,7 @@ import Navigator from './components/Navigator';
 function App() {
   return (
     <div className='app-container'>
-      <Navigator></Navigator>
+      <Navigator/>
       <RouterProvider router={router} />
     </div>
   )

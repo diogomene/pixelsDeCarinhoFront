@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import getAcoes from "../services/AcoesService";
 import { AxiosResponse } from "axios";
 import "./Home.css";
@@ -10,7 +10,6 @@ import Pix from "../assets/pix.jpeg";
 function Home() {
     const [acoes, setAcoes] = useState<Acao[]>([]);
     const [error, setError] = useState<string | null>(null);
-
     const fetchAcoes = async () => {
         try {
             const response: AxiosResponse<Acao[], any> = await getAcoes();
