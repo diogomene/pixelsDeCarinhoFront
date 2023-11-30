@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0;
+    width: 100%;
+    overflow-x: auto;
 }
 
 @media screen and (max-width: 1020px) {
@@ -15,3 +17,4 @@
         padding-bottom: 15%;
     }
 }
+

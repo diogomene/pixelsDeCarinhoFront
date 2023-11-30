@@ -58,7 +58,7 @@ function Transparency() {
                         <table className="table-entradas">
                             <thead>
                                 <tr>
-                                    <th className="nome-doador">Nome do Doador</th>
+                                    <th>Nome do Doador</th>
                                     <th className="text-center data-hora">Data e Hora</th>
                                     <th className="text-right">Valor</th>
                                 </tr>

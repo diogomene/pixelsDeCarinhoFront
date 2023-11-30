@@ -89,5 +89,7 @@
         width: 100px;
     }
     .page-transparency table{
-        font-size: .8rem;    }
+        font-size: .8rem;
+        max-width: 100%;   
+    }
 }
