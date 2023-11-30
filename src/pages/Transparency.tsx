@@ -58,7 +58,7 @@ function Transparency() {
                         <table className="table-entradas">
                             <thead>
                                 <tr>
-                                    <th>Nome do Doador</th>
+                                    <th className="nome-doador">Nome do Doador</th>
                                     <th className="text-center data-hora">Data e Hora</th>
                                     <th className="text-right">Valor</th>
                                 </tr>
@@ -66,7 +66,7 @@ function Transparency() {
                             <tbody>
                                 {Entradas.map((a) => (
                                     <tr key={a._id}>
-                                        <td>{a.nomeDoador}</td>
+                                        <td className="nome-doador">{a.nomeDoador}</td>
                                         <td className="text-center data-hora">{a.dataHora}</td>
                                         <td className="text-right">
                                             {a.valor.toLocaleString("pt-BR", {
