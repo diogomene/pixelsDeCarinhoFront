@@ -28,7 +28,7 @@ function Navigator() {
     }
     return (
         <nav className="navbar">
-            <a className="logo-container" href="">
+            <a className="logo-container" href="/">
                 <img
                     className="imagem-logo"
                     src={Logo}
