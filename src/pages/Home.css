@@ -31,6 +31,9 @@
     width: 10rem;
     height: auto;
 }
+.homePage-container h1{
+    margin-bottom: 1rem;
+}
 .homePage-container p{
     margin-bottom: 1rem;
 }
