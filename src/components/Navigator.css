@@ -83,7 +83,7 @@ ul.unactive{
     }
     100% {
         opacity: 0;
-        top: -100%;
+        top: -150%;
     }
 }
 
@@ -104,7 +104,7 @@ ul.unactive{
         justify-content: space-evenly;
         padding-bottom: 4rem;
         left: 0;
-        top: -100%;
+        top: -1000%;
         background-color: #F9B902;
     }
     ul li{
