@@ -15,9 +15,8 @@
 }
 
 .table-entradas {
-
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 3rem;
 }
 
 .table-entradas th,
@@ -83,11 +82,11 @@
 }
 
 @media screen and (max-width: 468px) {
-    .table-entradas .data-hora,
+    /* .table-entradas .data-hora,
     .table-entradas .nome-doador,
     .table-saidas .data-hora {
         width: 100px;
-    }
+    } */
     .page-transparency table{
         font-size: .8rem;
         max-width: 100%;   

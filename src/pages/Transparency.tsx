@@ -51,10 +51,10 @@ function Transparency() {
     return (
         <PageContainer>
             <Paper>
+                <div className="page-transparency">
                 <div>
                     <h1 className="entradas-title">Entradas</h1>
                     {error && <p>{error}</p>}
-                    <div className="page-transparency">
                         <table className="table-entradas">
                             <thead>
                                 <tr>
@@ -93,13 +93,11 @@ function Transparency() {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
                 </div>
                 <hr className="separator" />
                 <div>
                     <h1 className="saidas-title">Saídas</h1>
                     {error && <p>{error}</p>}
-                    <div className="page-transparency">
                         <table className="table-entradas">
                             <thead>
                                 <tr>
@@ -143,8 +141,8 @@ function Transparency() {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
                 </div>
+                    </div>
             </Paper>
         </PageContainer>
     );
