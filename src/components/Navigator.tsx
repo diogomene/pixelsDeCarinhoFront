@@ -34,7 +34,7 @@ function Navigator() {
                 alt="Logo"
             ></img>
             <ul ref={menuRef} className="unactive">
-                <div>
+
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -53,7 +53,6 @@ function Navigator() {
                     <li>
                         <a href="/contact">Contato</a>
                     </li>
-                </div>
             </ul>
             <div className="menuContainer">
                 <FontAwesomeIcon icon={faBars} className="icon" color="white" onClick={toggleMenu}/>

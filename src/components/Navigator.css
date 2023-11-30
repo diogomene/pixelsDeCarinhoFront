@@ -22,7 +22,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex;
+    display: block;
+    position: static;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -99,9 +100,15 @@ ul.unactive{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 4rem;
         left: 0;
         top: -100%;
         background-color: #F9B902;
+    }
+    ul li{
+        font-size: 1.5rem;
+        font-weight: 500;
     }
     li {
         float: none;
