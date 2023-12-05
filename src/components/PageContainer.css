@@ -3,9 +3,11 @@
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0;
+    width: 100%;
+    overflow-x: auto;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1020px) {
     .page-container {
         display: flex;
         flex-direction: row;
@@ -15,3 +17,4 @@
         padding-bottom: 15%;
     }
 }
+
