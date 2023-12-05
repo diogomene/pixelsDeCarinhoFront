@@ -1,7 +1,6 @@
 .page-transparency {
     flex-direction: row;
 }
-
 .lista-entrada {
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@
 
 .table-entradas {
     border-collapse: collapse;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .table-entradas th,
@@ -40,9 +39,7 @@
 
 .entradas-title,
 .saidas-title {
-    z-index: 0;
-    position: sticky;
-    top: 71px;
+    font-weight: 200;
     background-color: #ffffff;
 }
 
