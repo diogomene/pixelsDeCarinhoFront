@@ -1,0 +1,34 @@
+.text-right {
+    text-align: right !important;
+    text-align: -webkit-right !important;
+}
+
+.text-center {
+    text-align: center !important;
+    text-align: -webkit-center !important;
+}
+
+.hide {
+    visibility: collapse !important;
+}
+
+.show {
+    visibility: visible;
+}
+
+.row-expand:hover {
+    cursor: pointer;
+}
+
+tr.row-expand:nth-child(4n + 1):not(.expanded) {
+    background-color: white !important;
+}
+
+tr.row-expand svg {
+    transform: rotate(deg);
+    transition: all .3s ease-in-out;
+}
+
+tr.row-expand.expanded svg {
+    transform: rotate(90deg);
+}

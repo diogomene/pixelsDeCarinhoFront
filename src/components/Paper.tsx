@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import "./Paper.css";
-("");
 
 interface PaperProps {
     backgroundColor?: string;
