@@ -1,0 +1,16 @@
+.table-detail {
+    width: 50%;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+}
+
+.table-detail > thead th,
+.table-detail > tbody td {
+    font-size: 12px;
+}
+
+.table-detail > tbody td {
+    font-style: italic;
+}
