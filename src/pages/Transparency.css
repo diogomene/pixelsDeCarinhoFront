@@ -29,11 +29,11 @@
     background-color: #f2f2f2;
 }
 
-.table-entradas tbody tr:nth-child(even) {
+.row-expand:nth-child(1n + 2) {
     background-color: #f9f9f9;
 }
 
-.table-entradas tbody tr:hover {
+.table-entradas tbody tr:hover:not(.show) {
     background-color: #f1f1f1;
 }
 
