@@ -36,7 +36,6 @@ function Navigator() {
                 ></img>
             </a>
             <ul ref={menuRef}>
-
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -46,12 +45,9 @@ function Navigator() {
                     <li>
                         <a href="/transparency">Transparência</a>
                     </li>
-                    {/* <li>
-                        <a href="/photos">Galeria de fotos</a>
-                    </li>
                     <li>
-                        <a href="/promotional-material">Material de divulgação</a>
-                    </li>*/}
+                        <a href="/galeria">Galeria de fotos</a>
+                    </li>
                     <li>
                         <a href="/contact">Contato</a>
                     </li>
