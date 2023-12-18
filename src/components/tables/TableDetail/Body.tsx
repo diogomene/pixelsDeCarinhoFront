@@ -10,9 +10,9 @@ function Body({ data, showDescricao }: PaperProps) {
         <tbody key={Date.now()}>
             {data.map(({ data, valor, descricao }: Base) =>
                 <tr key={new Date().getTime() * Math.random()}>
-                    {showDescricao && <td>{descricao}</td>}
-                    <td>{data}</td>
-                    <td className="text-right">{valor.toLocaleString(
+                    {showDescricao && <td className="descricao">{descricao}</td>}
+                    <td className="text-center data-hora">{data}</td>
+                    <td className="text-right valor">{valor.toLocaleString(
                         "pt-BR", {
                         style: "currency",
                         currency: "BRL",

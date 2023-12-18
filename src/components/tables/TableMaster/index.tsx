@@ -1,6 +1,7 @@
 import Header from "./Header";
 import { Dictionary } from "lodash";
 import Body from "./Body";
+import "./index.css"
 
 interface PaperProps {
     data: Dictionary<Base[]>,
@@ -10,7 +11,7 @@ interface PaperProps {
 function TableMaster({ data, showDescricao }: PaperProps) {
 
     return (
-        <table className="table-entradas">
+        <table className="table-entradas flex">
             <Header />
             <Body data={data} showDescricao={showDescricao} />
         </table>

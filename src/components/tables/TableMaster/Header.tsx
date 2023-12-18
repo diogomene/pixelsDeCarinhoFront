@@ -3,7 +3,7 @@ function Header() {
         <thead>
             <tr>
                 <th>Nome do Doador</th>
-                <th className="text-right">Total</th>
+                <th className="text-right valor">Total</th>
             </tr>
         </thead>
     )

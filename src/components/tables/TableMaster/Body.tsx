@@ -26,7 +26,7 @@ function Body({ data, showDescricao }: PaperProps) {
                                     <FontAwesomeIcon icon={faChevronRight} />
                                     <span style={{ marginLeft: '10px' }}>{e}</span>
                                 </td>
-                                <td className="text-right">
+                                <td className="text-right valor">
                                     {
                                         total(e).toLocaleString("pt-BR", {
                                             style: "currency",
