@@ -10,7 +10,12 @@ export default function Paper({ children, backgroundColor }: PaperProps) {
     return (
         <div
             className="paper-container"
-            style={backgroundColor?{backgroundColor:backgroundColor}:{}}
+            style={{
+                backgroundColor: backgroundColor,
+                gap: '40px',
+                display: 'flex',
+                flexDirection: 'row'
+            }}
         >
             {children}
         </div>

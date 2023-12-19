@@ -61,11 +61,6 @@
     font-weight: 700;
 }
 
-.table-entradas .data-hora,
-.table-saidas .data-hora {
-    width: 180px;
-}
-
 .no-border-left {
     border-left: none !important;
 }

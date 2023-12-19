@@ -1,5 +1,6 @@
 .table-detail {
-    width: 50%;
+    width: 95%;
+    /* min-width: 360px !important; */
     padding: 0;
     border-spacing: 0;
     border-collapse: collapse;
@@ -13,4 +14,45 @@
 
 .table-detail > tbody td {
     font-style: italic;
+}
+
+.flex {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.flex > thead,
+.flex > tbody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.flex > thead > tr,
+.flex > tbody > tr {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.flex > thead th:nth-child(1),
+.flex > tbody > tr > td:nth-child(1) {
+    flex: 10;
+}
+
+.flex > thead th:nth-child(2),
+.flex > tbody > tr > td:nth-child(2) {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.flex > thead > tr > th,
+.flex > tbody > tr > td,
+.flex > tbody > tr > td > span {
+    display: flex;
+    align-items: center;
 }

@@ -9,11 +9,21 @@
 }
 
 .hide {
-    visibility: collapse !important;
+    /* visibility: collapse !important; */
+    max-height: 0 !important;
 }
 
+.show,
+.show > td {
+    overflow: hidden;
+    justify-content: flex-end;
+    flex: 1;
+}
 .show {
-    visibility: visible;
+    /* visibility: visible; */
+    max-height: 1000px;
+    height: auto;
+    transition: all .25s ease-in-out;
 }
 
 .row-expand:hover {
@@ -31,4 +41,19 @@ tr.row-expand svg {
 
 tr.row-expand.expanded svg {
     transform: rotate(90deg);
+}
+
+.table-entradas {
+    font-size: 14px;
+}
+
+.table-entradas > tbody > tr > td > span,
+.table-entradas > tbody > tr > td+td
+ {
+    font-weight: 500;
+}
+
+.table-entradas > thead > tr > th+th,
+.table-entradas > tbody > tr > td+td {
+    min-width: 120px !important;
 }

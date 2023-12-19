@@ -66,16 +66,15 @@ function Transparency() {
     return (
         <PageContainer>
             <Paper>
-                <div>
-                    <h1 className="entradas-title">Entradas</h1>
+                <div style={{ flex: 1}}>
+                    <h1 className="entradas-title">Receitas</h1>
                     {error && <p>{error}</p>}
                     <div className="page-transparency">
                         <TableMaster data={Entradas} />
                     </div>
                 </div>
-                <hr className="separator" />
-                <div>
-                    <h1 className="saidas-title">Saídas</h1>
+                <div style={{ flex: 1}}>
+                    <h1 className="saidas-title">Despesas</h1>
                     {error && <p>{error}</p>}
                     <div className="page-transparency">
                         <TableMaster data={Saidas} showDescricao={true} />
