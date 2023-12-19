@@ -35,7 +35,7 @@ tr.row-expand:nth-child(4n + 1):not(.expanded) {
 }
 
 tr.row-expand svg {
-    transform: rotate(deg);
+    transform: rotate(0deg);
     transition: all .3s ease-in-out;
 }
 
@@ -53,6 +53,7 @@ tr.row-expand.expanded svg {
     font-weight: 500;
 }
 
+.table-entradas > tfoot > tr > th+th,
 .table-entradas > thead > tr > th+th,
 .table-entradas > tbody > tr > td+td {
     min-width: 120px !important;

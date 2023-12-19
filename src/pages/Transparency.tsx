@@ -49,7 +49,6 @@ function Transparency() {
     const convertSaidas = ({ dataHora, descricao, destino, valor }: Saida): Base => ({ data: dataHora, descricao, destino, valor })
     const convertEntradas = ({ dataHora, nomeDoador, valor }: Entrada): Base => ({ data: dataHora, destino: nomeDoador, valor })
 
-
     const normalizeData = (
         values: Base[],
         order: Many<ValueIteratee<Base>> = ['destino', 'data'],
