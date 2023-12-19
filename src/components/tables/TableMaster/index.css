@@ -7,6 +7,7 @@
     
 }
 
+.table-detail > tfoot th,
 .table-detail > thead th,
 .table-detail > tbody td {
     font-size: 12px;
@@ -25,6 +26,7 @@
 }
 
 .flex > thead,
+.flex > tfoot,
 .flex > tbody {
     display: flex;
     flex: 1;
@@ -32,6 +34,7 @@
 }
 
 
+.flex > tfoot > tr,
 .flex > thead > tr,
 .flex > tbody > tr {
     display: flex;
@@ -39,17 +42,20 @@
     flex-direction: row;
 }
 
+.flex > tfoot th:nth-child(1),
 .flex > thead th:nth-child(1),
 .flex > tbody > tr > td:nth-child(1) {
     flex: 10;
 }
 
+.flex > tfoot th:nth-child(2),
 .flex > thead th:nth-child(2),
 .flex > tbody > tr > td:nth-child(2) {
     flex: 1;
     justify-content: flex-end;
 }
 
+.flex > tfoot > tr > th,
 .flex > thead > tr > th,
 .flex > tbody > tr > td,
 .flex > tbody > tr > td > span {
