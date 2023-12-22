@@ -1,4 +1,7 @@
-.fotos-evento {
-    padding: 10px;
+.image-gallery-container{
+    width: 100%;
+}
+.image-gallery-page-container{
+    display: block;
     width: 100%;
 }

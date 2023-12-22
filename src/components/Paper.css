@@ -17,6 +17,7 @@
         flex-direction: column;
         text-align: left;
         width: auto;
+        max-width: 100%;
         height: auto;
     }
 
