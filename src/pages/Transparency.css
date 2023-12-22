@@ -1,3 +1,10 @@
+.transparency-page-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
 .page-transparency {
     flex-direction: row;
 }
