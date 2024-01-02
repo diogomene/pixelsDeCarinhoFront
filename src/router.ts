@@ -5,6 +5,7 @@ import Transparency from "./pages/Transparency.tsx";
 import Desenvolvimento from "./pages/Desenvolvimento.tsx";
 import Contact from "./pages/Contact.tsx";
 import Galeria from "./pages/Galeria.tsx";
+import Help from "./pages/Help.tsx";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: "/galeria",
         Component: Galeria,
+    },
+    {
+        path: "/help",
+        Component: Help,
     },
     {
         path: "*",

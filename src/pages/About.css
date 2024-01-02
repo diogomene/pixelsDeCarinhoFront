@@ -1,0 +1,53 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-foto p {
+    text-align: center;
+}
+
+.text-about-us {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.ig-about {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .fotos {
+        flex-direction: column;
+    }
+}
