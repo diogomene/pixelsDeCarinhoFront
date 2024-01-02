@@ -40,16 +40,19 @@ function Navigator() {
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/about-us">Sobre nós</a>
+                        <a href="/help">Como ajudar?</a>
                     </li>
                     <li>
-                        <a href="/transparency">Transparência</a>
+                        <a href="/about-us">Quem somos?</a>
+                    </li>
+                    <li>
+                        <a href="/transparency">Portal Transparente</a>
                     </li>
                     <li>
                         <a href="/galeria">Galeria de fotos</a>
                     </li>
                     <li>
-                        <a href="/contact">Contato</a>
+                        <a href="/contact">Entre em contato</a>
                     </li>
             </ul>
             <div className="menuContainer">

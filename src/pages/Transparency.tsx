@@ -70,14 +70,14 @@ function Transparency() {
                         <h1 className="entradas-title">Receitas</h1>
                         {error && <p>{error}</p>}
                         <div className="page-transparency">
-                            <TableMaster data={Entradas} />
+                            <TableMaster data={Entradas} tableTitle="Nome doador"/>
                         </div>
                     </div>
                     <div style={{ flex: 1}}>
                         <h1 className="saidas-title">Despesas</h1>
                         {error && <p>{error}</p>}
                         <div className="page-transparency">
-                            <TableMaster data={Saidas} showDescricao={true} />
+                            <TableMaster data={Saidas} showDescricao={true} tableTitle="Nome"/>
                         </div>
                     </div>
                 </div>

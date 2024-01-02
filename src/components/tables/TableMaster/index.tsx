@@ -6,14 +6,15 @@ import Footer from "./Footer.tsx";
 
 interface PaperProps {
     data: Dictionary<Base[]>,
-    showDescricao?: boolean
+    showDescricao?: boolean,
+    tableTitle: string
 }
 
-function TableMaster({ data, showDescricao }: PaperProps) {
+function TableMaster({ tableTitle, data, showDescricao }: PaperProps) {
 
     return (
         <table className="table-entradas flex">
-            <Header />
+            <Header title={tableTitle}/>
             <Body data={data} showDescricao={showDescricao} />
             <Footer data={data} />
         </table>

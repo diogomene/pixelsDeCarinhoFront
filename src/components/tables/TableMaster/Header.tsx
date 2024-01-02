@@ -1,8 +1,11 @@
-function Header() {
+type HeaderParams = {
+    title: string
+}
+function Header({title} : HeaderParams) {
     return (
         <thead>
             <tr>
-                <th>Nome do Doador</th>
+                <th>{title}</th>
                 <th className="text-right valor">Total</th>
             </tr>
         </thead>

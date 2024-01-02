@@ -14,10 +14,11 @@ export default function Paper({ children, backgroundColor }: PaperProps) {
                 backgroundColor: backgroundColor,
                 gap: '40px',
                 display: 'flex',
-                flexDirection: 'row'
+                flexDirection: 'row',
+                paddingTop: '40px'
             }}
         >
             {children}
-        </div>
+        </div>        
     );
 }
