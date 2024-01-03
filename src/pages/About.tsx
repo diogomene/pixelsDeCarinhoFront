@@ -94,11 +94,7 @@ function AboutUs() {
                             <strong>#PixelsDeCarinho</strong>
                         </p>
                     </div>
-                </div>
-            </Paper>
 
-            <Paper>
-                <div>
                     <h2>Colaboradores</h2>
                     <div className="fotos">
                         <div className="container-foto">
@@ -141,6 +137,7 @@ function AboutUs() {
                             <p>Transporte e embalagem das doações.</p>
                         </div>
                     </div>
+
                 </div>
             </Paper>
         </PageContainer>
