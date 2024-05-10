@@ -2,9 +2,9 @@
     z-index: 9;
     position: sticky;
     top: 0;
-    background-color: #F9B902;
+    background-color: #f9b902;
     overflow: hidden;
-    display: flex;;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -30,18 +30,18 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: scale .1s ease-in;
+    transition: scale 0.1s ease-in;
 }
 
 li a:hover {
-    color: white;
+    color: black;
     scale: 1.1;
 }
-.logo-container{
+.logo-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,16 +52,16 @@ li a:hover {
     width: 4rem;
     height: auto;
 }
-.menuContainer{
+.menuContainer {
     cursor: pointer;
     display: none;
 }
-ul.active{
+ul.active {
     display: flex;
-    animation: showMenu .3s ease-in-out forwards;
+    animation: showMenu 0.3s ease-in-out forwards;
 }
-ul.unactive{
-    animation: hideMenu .3s ease-in-out;
+ul.unactive {
+    animation: hideMenu 0.3s ease-in-out;
 }
 @keyframes showMenu {
     from {
@@ -78,8 +78,8 @@ ul.unactive{
         opacity: 1;
         top: 4rem;
     }
-    20%{
-        opacity: .2;
+    20% {
+        opacity: 0.2;
     }
     100% {
         opacity: 0;
@@ -87,10 +87,8 @@ ul.unactive{
     }
 }
 
-
 @media screen and (max-width: 1020px) {
-    
-    .navbar{
+    .navbar {
         justify-content: space-between;
         padding: 0 3rem;
     }
@@ -105,9 +103,9 @@ ul.unactive{
         padding-bottom: 4rem;
         left: 0;
         top: -1000%;
-        background-color: #F9B902;
+        background-color: #f9b902;
     }
-    ul li{
+    ul li {
         font-size: 1.5rem;
         font-weight: 500;
     }
@@ -116,15 +114,13 @@ ul.unactive{
         display: block;
         text-align: left;
     }
-    .menuContainer{
+    .menuContainer {
         display: block;
     }
-
 }
 
-
 @media screen and (max-width: 500px) {
-    .navbar{
+    .navbar {
         padding: 0 2rem;
     }
 }

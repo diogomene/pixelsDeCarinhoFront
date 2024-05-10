@@ -1,3 +1,54 @@
-a {
-    color: black;
+.contact {
+    font-size: large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-link {
+    color: #3f51b5;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #ff4081;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.email-icon {
+    color: #4caf50;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.email-link {
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #ff4081;
+}
+
+.heart-icon {
+    color: #f44336;
+    font-size: 24px;
+    margin-right: 10px;
 }

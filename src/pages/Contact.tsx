@@ -1,42 +1,41 @@
 import PageContainer from "../components/PageContainer";
 import Paper from "../components/Paper";
-import './Contact.css';
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import "./Contact.css";
 
 function Contact() {
     return (
         <PageContainer>
             <Paper>
                 <div className="contact">
-                    <h4>Entre em contato conosco!</h4>
+                    <h2>Entre em contato conosco!</h2>
                     <br />
-                    <p>
-                        Instagram:{" "}
-                        <strong>
-                            <a href="https://www.instagram.com/pixelsdecarinho/">
-                                @pixelsdecarinho
-                            </a>
-                        </strong>
-                    </p>
-                    <br />
-                    <p>
-                        Facebook:{" "}
-                        <strong>
-                            <a href="https://www.facebook.com/pixelsdecarinho/">
-                                @pixelsdecarinho
-                            </a>
-                        </strong>
-                    </p>
-                    <br />
-                    <p>
-                        E-mail:{" "}
-                        <strong>
-                            <a href="mailto:pixelsdecarinho@gmail.com">
-                                pixelsdecarinho@gmail.com
-                            </a>
-                        </strong>
-                    </p>
-
-                    <br />
+                    <p>Siga-nos nas redes sociais:</p>
+                    <div className="social-icons">
+                        <a
+                            href="https://www.instagram.com/pixelsdecarinho/"
+                            className="icon-link"
+                        >
+                            <FaInstagram className="icon" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/pixelsdecarinho/"
+                            className="icon-link"
+                        >
+                            <FaFacebook className="icon" />
+                        </a>
+                    </div>
+                    <p>Envie-nos um e-mail:</p>
+                    <div className="email">
+                        <MdEmail className="email-icon" />
+                        <a
+                            href="mailto:pixelsdecarinho@gmail.com"
+                            className="email-link"
+                        >
+                            pixelsdecarinho@gmail.com
+                        </a>
+                    </div>
                 </div>
             </Paper>
         </PageContainer>
